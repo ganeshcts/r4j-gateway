@@ -1,0 +1,12 @@
+server:
+  port : 8081
+  tomcat:
+    connection-timeout : 1000
+  
+config:
+  primary:
+    endpoint: "http://localhost:8080"
+  secondary:
+    endpoint: "http://localhost:8090"
+  
+  

@@ -1,0 +1,14 @@
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\demo\Config.java
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\properties\CircuitBreakerCustomConfig.java
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\properties\CacheSetup.java
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\properties\ThreadPoolBulkheadCustomConfig.java
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\demo\WebConfiguration.java
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\properties\RetryCustomConfig.java
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\demo\ConnectionController.java
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\utility\ThrowingConsumerWrapper.java
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\demo\R4jDemoFrontApplication.java
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\properties\TimeLimiterCustomConfig.java
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\properties\RateLimiterCustomConfig.java
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\utility\TestCache.java
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\properties\BulkheadCustomConfig.java
+C:\R4j\POC\r4j-demo-front\src\main\java\com\example\utility\ThrowingConsumer.java

@@ -1,0 +1,189 @@
+{
+  "groups": [
+    {
+      "name": "bulkhead",
+      "type": "com.example.properties.BulkheadCustomConfig",
+      "sourceType": "com.example.properties.BulkheadCustomConfig"
+    },
+    {
+      "name": "bulkhead",
+      "type": "io.github.resilience4j.bulkhead.Bulkhead",
+      "sourceType": "com.example.properties.BulkheadCustomConfig",
+      "sourceMethod": "getBulkhead()"
+    },
+    {
+      "name": "circuit-breaker",
+      "type": "com.example.properties.CircuitBreakerCustomConfig",
+      "sourceType": "com.example.properties.CircuitBreakerCustomConfig"
+    },
+    {
+      "name": "circuit-breaker",
+      "type": "io.github.resilience4j.circuitbreaker.CircuitBreaker",
+      "sourceType": "com.example.properties.CircuitBreakerCustomConfig",
+      "sourceMethod": "getCb()"
+    },
+    {
+      "name": "rate-limiter",
+      "type": "com.example.properties.RateLimiterCustomConfig",
+      "sourceType": "com.example.properties.RateLimiterCustomConfig"
+    },
+    {
+      "name": "rate-limiter",
+      "type": "io.github.resilience4j.ratelimiter.RateLimiter",
+      "sourceType": "com.example.properties.RateLimiterCustomConfig",
+      "sourceMethod": "getRl()"
+    },
+    {
+      "name": "retry",
+      "type": "com.example.properties.RetryCustomConfig",
+      "sourceType": "com.example.properties.RetryCustomConfig"
+    },
+    {
+      "name": "retry",
+      "type": "io.github.resilience4j.retry.Retry",
+      "sourceType": "com.example.properties.RetryCustomConfig",
+      "sourceMethod": "getRt()"
+    },
+    {
+      "name": "thread-pool-bulkhead",
+      "type": "com.example.properties.ThreadPoolBulkheadCustomConfig",
+      "sourceType": "com.example.properties.ThreadPoolBulkheadCustomConfig"
+    },
+    {
+      "name": "thread-pool-bulkhead",
+      "type": "io.github.resilience4j.bulkhead.ThreadPoolBulkhead",
+      "sourceType": "com.example.properties.ThreadPoolBulkheadCustomConfig",
+      "sourceMethod": "getThreadPoolBulkhead()"
+    },
+    {
+      "name": "time-limiter",
+      "type": "com.example.properties.TimeLimiterCustomConfig",
+      "sourceType": "com.example.properties.TimeLimiterCustomConfig"
+    },
+    {
+      "name": "time-limiter",
+      "type": "io.github.resilience4j.timelimiter.TimeLimiter",
+      "sourceType": "com.example.properties.TimeLimiterCustomConfig",
+      "sourceMethod": "getTl()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "bulkhead.max-concurrent-calls",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.properties.BulkheadCustomConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "bulkhead.max-wait-duration",
+      "type": "java.time.Duration",
+      "sourceType": "com.example.properties.BulkheadCustomConfig"
+    },
+    {
+      "name": "circuit-breaker.automatic-transition-from-open-to-half-open-enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.example.properties.CircuitBreakerCustomConfig",
+      "defaultValue": false
+    },
+    {
+      "name": "circuit-breaker.failure-rate-threshold",
+      "type": "java.lang.Float",
+      "sourceType": "com.example.properties.CircuitBreakerCustomConfig"
+    },
+    {
+      "name": "circuit-breaker.minimum-number-of-calls",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.properties.CircuitBreakerCustomConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "circuit-breaker.permitted-number-of-calls-in-half-open-state",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.properties.CircuitBreakerCustomConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "circuit-breaker.sliding-window-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.properties.CircuitBreakerCustomConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "circuit-breaker.slow-call-duration-threshold",
+      "type": "java.time.Duration",
+      "sourceType": "com.example.properties.CircuitBreakerCustomConfig"
+    },
+    {
+      "name": "circuit-breaker.slow-call-rate-threshold",
+      "type": "java.lang.Float",
+      "sourceType": "com.example.properties.CircuitBreakerCustomConfig"
+    },
+    {
+      "name": "circuit-breaker.wait-duration-in-open-state",
+      "type": "java.time.Duration",
+      "sourceType": "com.example.properties.CircuitBreakerCustomConfig"
+    },
+    {
+      "name": "rate-limiter.limit-for-period",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.properties.RateLimiterCustomConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "rate-limiter.limit-refresh-period",
+      "type": "java.time.Duration",
+      "sourceType": "com.example.properties.RateLimiterCustomConfig"
+    },
+    {
+      "name": "rate-limiter.timeout-duration",
+      "type": "java.time.Duration",
+      "sourceType": "com.example.properties.RateLimiterCustomConfig"
+    },
+    {
+      "name": "retry.max-attempts",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.properties.RetryCustomConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "retry.wait-duration",
+      "type": "java.time.Duration",
+      "sourceType": "com.example.properties.RetryCustomConfig"
+    },
+    {
+      "name": "thread-pool-bulkhead.core-thread-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.properties.ThreadPoolBulkheadCustomConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "thread-pool-bulkhead.keep-alive-duration",
+      "type": "java.time.Duration",
+      "sourceType": "com.example.properties.ThreadPoolBulkheadCustomConfig"
+    },
+    {
+      "name": "thread-pool-bulkhead.max-thread-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.properties.ThreadPoolBulkheadCustomConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "thread-pool-bulkhead.queue-capacity",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.properties.ThreadPoolBulkheadCustomConfig",
+      "defaultValue": 5
+    },
+    {
+      "name": "time-limiter.cancel-running-future",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.example.properties.TimeLimiterCustomConfig",
+      "defaultValue": false
+    },
+    {
+      "name": "time-limiter.timeout-duration",
+      "type": "java.time.Duration",
+      "sourceType": "com.example.properties.TimeLimiterCustomConfig"
+    }
+  ],
+  "hints": []
+}
